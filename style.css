@@ -1,0 +1,47 @@
+.container{
+    background-color: #eaa0af;
+    height: 300px;
+/* define um container flex */
+/* faz ficar horizontal */
+    display: flex;
+/* column faz ficar em coluna e achatado | row-reverse= deita */
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+.item {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(93, 0, 74);
+    margin: 10px;
+    color: white;
+    font-size: 32px;
+    /* alinhando os numeros */
+    display: flex;
+     /* justify-content: flex-end= alinha a direita | flex-start= alinha para a esquerda */
+    justify-content: center;
+    /* aling-itens:flex-end; alinha os itens na base*/
+    align-items: center;
+}
+.item:nth-child(2){
+    flex-shrink: 3;
+    order: 1;
+}
+.item:nth-child(5){
+    order: 5;
+    align-self: flex-end;
+}
+
+.item:nth-child(3){
+    order: 2;
+}
+.item:nth-child(1){
+    order: 3;
+}
+
+.item:nth-child(4){
+    order: 4;
+}
+.item:nth-child(6){
+    order: 6;
+}
